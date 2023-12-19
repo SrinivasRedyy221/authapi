@@ -1,0 +1,20 @@
+{
+    "name": "authentication-server",
+    "version": "1.0.0",
+    "description": "Authentication Server",
+    "main": "server.mjs",
+    "scripts": {
+        "start": "node server.mjs"
+    },
+    "dependencies": {
+        "bcrypt": "^5.1.1",
+        "bcryptjs": "^2.4.3",
+        "cookie-parser": "^1.4.5",
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.0",
+        "express": "^4.17.1",
+        "jsonwebtoken": "^8.5.1",
+        "mongodb": "^6.3.0",
+        "mongoose": "^6.0.15"
+    }
+}
