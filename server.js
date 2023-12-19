@@ -3,7 +3,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import bcrypt from 'bcrypt';
-import User from './models/User.js';
+import User from './models/User';
 
 dotenv.config();
 
