@@ -52,7 +52,9 @@ app.post('/login', async (req, res) => {
     return res.status(500).json({ error: 'An error occurred' });
   }
 });
-
+app.get('/', (req, res) => {
+  res.send('Authentication server is running!');
+});
 app.listen(PORT, () => {
   console.log(`Authentication server is running on port ${PORT}`);
 });
