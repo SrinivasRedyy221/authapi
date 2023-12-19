@@ -2,9 +2,10 @@
     "name": "authentication-server",
     "version": "1.0.0",
     "description": "Authentication Server",
-    "main": "server.mjs",
+    "main": "server.js",
+    "type": "module" ,
     "scripts": {
-        "start": "node server.mjs"
+        "start": "node server.js"
     },
     "dependencies": {
         "bcrypt": "^5.1.1",
