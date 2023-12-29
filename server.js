@@ -25,6 +25,11 @@ db.once('open', () => {
 app.use(cors({ credentials: true, origin: process.env.BASE_URL }));
 app.use(express.json());
 
+app.get('/register', async (req, res) => {
+  const users = await User.find({});
+  res.json(users);
+});
+
 app.post('/register', async (req, res) => {
   const { username, password } = req.body;
   try {
@@ -39,6 +44,10 @@ app.post('/register', async (req, res) => {
   }
 });
 
+app.get('/login', async (req, res) => {
+  const users = await User.find({});
+  res.json(users);
+});
 app.post('/login', async (req, res) => {
   const { username, password } = req.body;
   try {
