@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "Authentication Server",
     "main": "server.js",
-    "type": "module",
+    
     "scripts": {
         "start": "node server.js"
     },
